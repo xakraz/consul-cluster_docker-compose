@@ -8,6 +8,8 @@ MAINTAINER "Xavier Krantz <xakraz@gmail.com>"
 ## Base
 ## --
 RUN apt-get update
+RUN apt-get install -y --force-yes\
+ unzip
 
 
 ## Consul - Binary
@@ -37,7 +39,7 @@ RUN cd /tmp \
 
 ## SuperVisor
 ## --
-RUN apt-get install \
+RUN apt-get install -y --force-yes\
   supervisor
 
 
