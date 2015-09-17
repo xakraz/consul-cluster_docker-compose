@@ -10,6 +10,7 @@ consul-cluster_docker-compose
 	- [3 - Start the cluster](#3-start-the-cluster)
 	- [4 - Use the UIs](#4-use-the-uis)
 - [Details](#details)
+
 <!-- /TOC -->
 
 
@@ -26,7 +27,7 @@ docker build -t <YOUR_TAG_NAME> --file=Dockerfile .
 
 ## 2 - Update the docker-compose file
 
-(docker-compose.yml)
+[docker-compose.yml](docker-compose.yml)
 
 Stuff to update:
 
@@ -78,8 +79,8 @@ docker-compose up
 
 ## 4 - Use the UIs
 
-* Supervisor: http://DOCKER_IP:900X
-* Consul UI: http://DOCKER_IP:850X
+* Supervisor: [http://DOCKER_IP:900X]
+* Consul UI: [http://DOCKER_IP:850X]
 
 
 # Details
