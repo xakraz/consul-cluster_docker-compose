@@ -1,9 +1,11 @@
 ## SCM
 .git
 
-## Config Files (COPY or Volumes)
-consul
-supervisord
+## Config Files
+## --
+## If used ad Volumes
+## If you use COPY statement, remove the files from this list
+## https://docs.docker.com/reference/builder/#copy
 
 ## Docker Configs
 Dockerfile
