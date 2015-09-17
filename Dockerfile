@@ -18,16 +18,14 @@ EXPOSE 9001
 
 
 
-## Dir Layout
-## --
-ENV CONSUL_HOME /opt/consul
-RUN mkdir -p ${CONSUL_HOME}/conf \
-  && mkdir -p ${CONSUL_HOME}/data
-
-
-
 ## Consul
 ## --
+## Dir Layout
+ENV CONSUL_HOME /opt/consul
+RUN mkdir -p ${CONSUL_HOME}/conf \
+  && mkdir -p ${CONSUL_HOME}/data \
+  && mkdir -p ${CONSUL_HOME}/logs
+
 ## Binary
 ENV CONSUL_VERSION 0.5.2
 ENV CONSUL_SHA256 171cf4074bfca3b1e46112105738985783f19c47f4408377241b868affa9d445
@@ -51,7 +49,7 @@ RUN cd /tmp \
 
 ## Consul - Conf
 COPY consul/* ${CONSUL_HOME}/conf/
-
+COPY supervisor/conf.d/* /etc/supervisor/conf.d/
 
 
 ## Service
