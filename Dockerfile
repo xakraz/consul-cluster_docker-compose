@@ -12,7 +12,7 @@ RUN apt-get install -y --force-yes\
  unzip \
  supervisor
 
-#COPY supervisord/* /etc/supervisord/
+COPY supervisor/supervisord.conf /etc/supervisor/supervisord.conf
 
 EXPOSE 9001
 
