@@ -1,0 +1,7 @@
+{
+	"ui_dir": "/opt/consul/ui",
+	"server": true,
+	"dns_config": {
+		"allow_stale": false
+	}
+}
