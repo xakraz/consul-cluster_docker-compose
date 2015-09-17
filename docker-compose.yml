@@ -1,0 +1,28 @@
+---
+##
+consul1:
+  image: xakraz-sandbox/consul-server
+  ports:
+   - "8301:8300"
+   - "8401:8400"
+   - "8501:8500"
+   - "8601:8600"
+   - "9001:9001"
+
+consul2:
+  image: xakraz-sandbox/consul-server
+  ports:
+   - "8302:8300"
+   - "8402:8400"
+   - "8502:8500"
+   - "8602:8600"
+   - "9002:9001"
+
+consul3:
+  image: xakraz-sandbox/consul-server
+  ports:
+   - "8303:8300"
+   - "8403:8400"
+   - "8503:8500"
+   - "8603:8600"
+   - "9003:9001"
