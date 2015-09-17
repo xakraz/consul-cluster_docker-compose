@@ -9,7 +9,13 @@ MAINTAINER "Xavier Krantz <xakraz@gmail.com>"
 ## --
 RUN apt-get update
 RUN apt-get install -y --force-yes\
- unzip
+ unzip \
+ supervisor
+
+#COPY supervisord/* /etc/supervisord/
+
+EXPOSE 9001
+
 
 
 ## Consul - Binary
@@ -37,10 +43,6 @@ RUN cd /tmp \
  && rm webui.zip
 
 
-## SuperVisor
-## --
-RUN apt-get install -y --force-yes\
-  supervisor
 
 
 ## Service
