@@ -1,0 +1,10 @@
+## SCM
+.git
+
+## Config Files (COPY or Volumes)
+consul
+supervisord
+
+## Docker Configs
+Dockerfile
+docker-compose.yaml
