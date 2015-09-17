@@ -1,6 +1,17 @@
 consul-cluster_docker-compose
 ------------------------------
 
+<!-- TOC depth:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [Overview](#overview)
+- [Getting Started](#getting-started)
+	- [1 - Build the image](#1-build-the-image)
+	- [2 - Update the docker-compose file](#2-update-the-docker-compose-file)
+	- [3 - Start the cluster](#3-start-the-cluster)
+	- [4 - Use the UIs](#4-use-the-uis)
+- [Details](#details)
+<!-- /TOC -->
+
 
 # Overview
 
@@ -30,7 +41,6 @@ Stuff to update:
 ```yaml
 $ cat docker-compose.yml
 ---
-##
 consul1:
   image: sandbox/consul-server
   hostname: consul1
